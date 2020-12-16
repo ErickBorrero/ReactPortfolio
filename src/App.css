@@ -1,22 +1,9 @@
-/* @font-face {
-  font-family: bill smith;
-  src: url("Fonts/Bill-Smith.ttf");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Encoded Sans Expanded", sans-serif;
 }
-
-@font-face {
-  font-family: primer;
-  src: url("Fonts/primer-print.ttf");
-}
-
-@font-face {
-  font-family: khand;
-  src: url(Fonts/khand.ttf);
-}
-
-@font-face {
-  font-family: betmo;
-  src: url(Fonts/Betmo.otf);
-} */
 
 h1 {
   color: lightgray;
