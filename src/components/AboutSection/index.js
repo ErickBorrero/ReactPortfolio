@@ -2,8 +2,6 @@ import React from "react";
 import {
   AboutContainer,
   AboutWrapper,
-  AboutRow,
-  CardWrapper,
   Column1,
   AboutImg,
   Column2,
