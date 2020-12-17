@@ -10,31 +10,24 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutWrapper = styled.div`
-  display: flex;
   z-index: 1;
   height: 860px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1520px;
   padding: 0 24px;
-  justify-content: center;
 `;
 
 export const AboutRow = styled.div`
-  display: flexbox;
-  justify-content: space-between;
-  align-items: center;
-
   @media screen and (max-width: 768px) {
-    display: grid;
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `"col1" "col2"` : `"col1 col1" "col2 col2"`};
   }
 `;
+
+export const CardWrapper = styled.div``;
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col1;
+  align-self: start;
 `;
 
 export const AboutImg = styled.img`
@@ -51,8 +44,6 @@ export const AboutImg = styled.img`
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col2;
-  width: 80%;
 `;
 
 export const AboutHeading = styled.h3`
@@ -75,4 +66,20 @@ export const AboutText = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+`;
+
+export const ResumeButton = styled.button`
+  margin-top: 6px;
+  background: #909090;
+  height: 3vw;
+  border-radius: 100;
+
+  &:hover {
+    background: #fff;
+    color: #2b2b2b;
+  }
+`;
+
+export const DownloadIcon = styled.i`
+  font-size: 20px;
 `;

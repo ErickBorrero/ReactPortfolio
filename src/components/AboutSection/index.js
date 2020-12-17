@@ -3,11 +3,14 @@ import {
   AboutContainer,
   AboutWrapper,
   AboutRow,
+  CardWrapper,
   Column1,
   AboutImg,
   Column2,
   AboutHeading,
   AboutText,
+  ResumeButton,
+  DownloadIcon,
 } from "./AboutElements";
 
 const AboutSection = ({
@@ -22,27 +25,22 @@ const AboutSection = ({
   darkText,
 }) => {
   return (
-    <AboutContainer lightBg={lightBg} id={id}>
-      <AboutWrapper>
-        <AboutRow imgStart={imgStart}>
-          <Column1>
-            <AboutImg src={img} alt={alt} />
-          </Column1>
-          <Column2>
-            <AboutHeading lightText={lightText}>{headline}</AboutHeading>
-            <AboutText darkText={darkText}>{description}</AboutText>
-          </Column2>
-          {/* <Column3>
-            <ResumeButton></ResumeButton>
-          </Column3> */}
-          <div className="columns download">
-            <p>
-              <a href="" className="button">
-                <i className="fa fa-download"></i>Download Resume
-              </a>
-            </p>
-          </div>
-        </AboutRow>
+    <AboutContainer
+      lightBg={lightBg}
+      id={id}
+      className="card mb-3 align-items-center"
+    >
+      <AboutWrapper className="row">
+        <Column1 className="col-md-5  align-self-center">
+          <AboutImg src={img} alt={alt} />
+        </Column1>
+        <Column2 className="col-md-7 align-self-center">
+          <AboutHeading lightText={lightText}>{headline}</AboutHeading>
+          <AboutText darkText={darkText}>{description}</AboutText>
+          <ResumeButton>
+            <DownloadIcon className="fa fa-download" /> Download Resume
+          </ResumeButton>
+        </Column2>
       </AboutWrapper>
     </AboutContainer>
   );
