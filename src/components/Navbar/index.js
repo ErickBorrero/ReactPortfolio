@@ -1,9 +1,12 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import Logo from "../../images/ErickLogo.jpg";
+
 import {
   Nav,
   NavbarContainer,
   NavLogo,
+  NavLogoImg,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -15,7 +18,9 @@ export const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Erick Borrero</NavLogo>
+          <NavLogo to="/">
+            <NavLogoImg src={Logo} />
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
