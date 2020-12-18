@@ -1,4 +1,33 @@
 import React from "react";
+import {
+  ContactContainer,
+  ContactHeading,
+  ContactTitle,
+  ContactH1,
+  ContactBody,
+  ContactWrapper,
+  ContactForm,
+  ContactFieldset,
+  NameWrap,
+  NameLabel,
+  NameInput,
+  EmailWrap,
+  EmailLabel,
+  EmailInput,
+  SubjectWrap,
+  SubjectLabel,
+  SubjectInput,
+  MessageWrap,
+  MessageLabel,
+  MessagetextArea,
+  SubmitWrap,
+  SubmitButton,
+  LoaderWrap,
+  LoaderGif,
+  ContactFormError,
+  ContactSuccess,
+  SuccessIcon,
+} from "./ContactElements";
 
 const ContactSection = () => {
   return (
@@ -23,7 +52,7 @@ const ContactSection = () => {
                   size="35"
                   id="contactName"
                   name="contactName"
-                  onChange={(e) => setName(e.target.value)}
+                  //   onChange={(e) => setName(e.target.value)}
                 />
               </NameWrap>
 
@@ -37,53 +66,55 @@ const ContactSection = () => {
                   size="35"
                   id="contactEmail"
                   name="contactEmail"
-                  onChange={(e) => setEmail(e.target.value)}
+                  //   onChange={(e) => setEmail(e.target.value)}
                 />
               </EmailWrap>
 
-              <div>
-                <label htmlFor="contactSubject">Subject</label>
-                <input
-                  value={subject}
+              <SubjectWrap>
+                <SubjectLabel htmlFor="contactSubject">Subject</SubjectLabel>
+                <SubjectInput
                   type="text"
                   defaultValue=""
                   size="35"
                   id="contactSubject"
                   name="contactSubject"
-                  onChange={(e) => setSubject(e.target.value)}
+                  //   onChange={(e) => setSubject(e.target.value)}
                 />
-              </div>
+              </SubjectWrap>
 
-              <div>
-                <label htmlFor="contactMessage">
+              <MessageWrap>
+                <MessageLabel htmlFor="contactMessage">
                   Message <span className="required">*</span>
-                </label>
-                <textarea
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                </MessageLabel>
+                <MessagetextArea
+                  //   onChange={(e) => setMessage(e.target.value)}
                   cols="50"
                   rows="15"
                   id="contactMessage"
                   name="contactMessage"
-                ></textarea>
-              </div>
+                ></MessagetextArea>
+              </MessageWrap>
 
-              <div>
-                <button type="submit" onClick={handleClick} className="submit">
+              <SubmitWrap>
+                <SubmitButton
+                  type="submit"
+                  //   onClick={handleClick}
+                  className="submit"
+                >
                   Submit
-                </button>
-                <span id="image-loader">
-                  <img alt="" src="images/loader.gif" />
-                </span>
-              </div>
+                </SubmitButton>
+                <LoaderWrap id="image-loader">
+                  <LoaderGif alt="" src="images/loader.gif" />
+                </LoaderWrap>
+              </SubmitWrap>
             </ContactFieldset>
           </ContactForm>
 
-          <div id="message-warning"> Error </div>
-          <div id="message-success">
-            <i className="fa fa-check"></i>Your message was sent, thank you!
-            <br />
-          </div>
+          <ContactFormError id="message-warning"> Error </ContactFormError>
+          <ContactSuccess id="message-success">
+            <SuccessIcon className="fa fa-check"></SuccessIcon>Your message was
+            sent, thank you!
+          </ContactSuccess>
         </ContactWrapper>
       </ContactBody>
     </ContactContainer>

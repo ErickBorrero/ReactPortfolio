@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AboutSection from "../components/AboutSection";
 import { aboutObj } from "../components/AboutSection/Data";
+import ContactSection from "../components/ContactSection";
 import HeroSection from "../components/HeroSection";
 import { Navbar } from "../components/Navbar";
 import ProjectSection from "../components/ProjectSection";
@@ -31,6 +32,7 @@ const Home = () => {
       <ProjectSection {...projectTwoObj} />
       <ProjectSection {...projectThreeObj} />
       <ProjectSection {...projectFourObj} />
+      <ContactSection />
     </>
   );
 };
