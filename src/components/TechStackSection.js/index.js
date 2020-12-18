@@ -1,7 +1,6 @@
 import React from "react";
 import {
   TechStackContainer,
-  TechStackWrapper,
   TechStackHeader,
   TechStackLogos,
   LogoIcon,
@@ -9,7 +8,7 @@ import {
 
 const TechStackSection = () => {
   return (
-    <TechStackContainer className="row">
+    <TechStackContainer className="row" id="techStack">
       <TechStackHeader className="col-md-12 text-center">
         Tech Stack
       </TechStackHeader>

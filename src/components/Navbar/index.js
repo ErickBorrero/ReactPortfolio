@@ -18,7 +18,7 @@ export const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo to="hero">
             <NavLogoImg src={Logo} />
           </NavLogo>
           <MobileIcon onClick={toggle}>

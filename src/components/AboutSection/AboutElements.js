@@ -32,7 +32,7 @@ export const Column1 = styled.div`
 
 export const AboutImg = styled.img`
   border-radius: 50%;
-  height: 25vw;
+  height: 30vw;
   width: 25vw;
 
   @media screen and (max-width: 768px) {
@@ -69,14 +69,23 @@ export const AboutText = styled.p`
 `;
 
 export const ResumeButton = styled.button`
-  margin-top: 6px;
-  background: #909090;
-  height: 3vw;
-  border-radius: 100;
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 16px 64px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 
   &:hover {
+    transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #2b2b2b;
+    color: #010606;
+    border: 3px solid #01bf71;
   }
 `;
 

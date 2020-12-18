@@ -5,7 +5,7 @@ export const TechStackContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 862px;
   position: relative;
   z-index: 1;
 `;
@@ -25,7 +25,7 @@ export const TechStackHeader = styled.h1`
 export const TechStackLogos = styled.div``;
 
 export const LogoIcon = styled.i`
-  font-size: 8vw;
+  font-size: 6vw;
   border-radius: 50%;
   &:hover {
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);

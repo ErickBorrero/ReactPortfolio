@@ -3,6 +3,13 @@ import AboutSection from "../components/AboutSection";
 import { aboutObj } from "../components/AboutSection/Data";
 import HeroSection from "../components/HeroSection";
 import { Navbar } from "../components/Navbar";
+import ProjectSection from "../components/ProjectSection";
+import {
+  projectFourObj,
+  projectOneObj,
+  projectThreeObj,
+  projectTwoObj,
+} from "../components/ProjectSection/Data";
 import { Sidebar } from "../components/Sidebar";
 import TechStackSection from "../components/TechStackSection.js";
 
@@ -20,6 +27,10 @@ const Home = () => {
       <HeroSection />
       <AboutSection {...aboutObj} />
       <TechStackSection />
+      <ProjectSection {...projectOneObj} />
+      <ProjectSection {...projectTwoObj} />
+      <ProjectSection {...projectThreeObj} />
+      <ProjectSection {...projectFourObj} />
     </>
   );
 };

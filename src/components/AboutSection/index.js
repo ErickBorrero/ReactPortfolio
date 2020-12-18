@@ -29,7 +29,7 @@ const AboutSection = ({
       className="card mb-3 align-items-center"
     >
       <AboutWrapper className="row">
-        <Column1 className="col-md-5  align-self-center">
+        <Column1 className="col-md-5 d-flex justify-content-center align-self-center">
           <AboutImg src={img} alt={alt} />
         </Column1>
         <Column2 className="col-md-7 align-self-center">
