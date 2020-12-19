@@ -75,7 +75,7 @@ export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
@@ -90,14 +90,14 @@ export const BtnLink = styled.a`
 
 export const Button = styled.button`
   border-radius: 50px;
-  background: #01bf71;
+  background: #ced0d1;
   white-space: nowrap;
   padding: 16px 64px;
   margin: 4px;
-  color: #010606;
+  color: black;
   font-size: 16px;
   outline: none;
-  border: none;
+  border: 3px solid black;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -106,7 +106,7 @@ export const Button = styled.button`
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
-    border: 3px solid #01bf71;
+    border: 3px solid #ced0d1;
   }
 
   &:active,

@@ -2,12 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Merienda";
+  font-family: "Crimson Pro";
 }
 
-/* @media screen and (min-width: 1024px) {
-  body {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-} */
+body {
+  background-image: url(./images/test.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+}

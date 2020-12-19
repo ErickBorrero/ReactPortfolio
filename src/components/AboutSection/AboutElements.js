@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: transparent !important;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -15,12 +15,13 @@ export const AboutWrapper = styled.div`
   width: 100%;
   max-width: 1520px;
   padding: 0 24px;
-`;
 
-export const AboutRow = styled.div`
   @media screen and (max-width: 768px) {
+    height: 1050px;
   }
 `;
+
+export const AboutRow = styled.div``;
 
 export const CardWrapper = styled.div``;
 
@@ -69,13 +70,13 @@ export const AboutText = styled.p`
 
 export const ResumeButton = styled.button`
   border-radius: 50px;
-  background: #01bf71;
+  background: #ced0d1;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: black;
   font-size: 16px;
   outline: none;
-  border: none;
+  border: 3px solid black;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -84,7 +85,7 @@ export const ResumeButton = styled.button`
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
-    border: 3px solid #01bf71;
+    border: 3px solid #ced0d1;
   }
 
   &:active,

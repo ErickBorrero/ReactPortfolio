@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +58,6 @@ export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
   text-align: center;
-  font-family: "Bebas Neue";
 
   @media screen and(max-width: 768px) {
     font-size: 40px;

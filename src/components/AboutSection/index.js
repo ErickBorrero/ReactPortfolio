@@ -37,7 +37,7 @@ const AboutSection = ({
           <AboutHeading lightText={lightText}>{headline}</AboutHeading>
           <AboutText>{description}</AboutText>
           <ResumeLink
-            href="https://www2.slideshare.net/ErickBorrero/ericks-resume-239852013"
+            href="https://www2.slideshare.net/ErickBorrero/erick-borreros-resume"
             target="blank"
           >
             <ResumeButton>
