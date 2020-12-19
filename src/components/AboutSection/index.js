@@ -8,6 +8,7 @@ import {
   AboutHeading,
   AboutText,
   ResumeButton,
+  ResumeLink,
   DownloadIcon,
 } from "./AboutElements";
 
@@ -34,10 +35,15 @@ const AboutSection = ({
         </Column1>
         <Column2 className="col-md-7 align-self-center">
           <AboutHeading lightText={lightText}>{headline}</AboutHeading>
-          <AboutText darkText={darkText}>{description}</AboutText>
-          <ResumeButton>
-            <DownloadIcon className="fa fa-download" /> Download Resume
-          </ResumeButton>
+          <AboutText>{description}</AboutText>
+          <ResumeLink
+            href="https://www2.slideshare.net/ErickBorrero/ericks-resume-239852013"
+            target="blank"
+          >
+            <ResumeButton>
+              <DownloadIcon className="fa fa-download" /> Download Resume
+            </ResumeButton>
+          </ResumeLink>
         </Column2>
       </AboutWrapper>
     </AboutContainer>

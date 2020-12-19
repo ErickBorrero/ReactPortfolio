@@ -17,5 +17,4 @@ export const aboutObj = {
   imgStart: true,
   img: require("../../images/ProfilePic.jpg").default,
   alt: "Profile Pic",
-  darkText: false,
 };

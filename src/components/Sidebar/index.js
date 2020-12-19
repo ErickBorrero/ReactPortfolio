@@ -16,16 +16,52 @@ export const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="about"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            activeClass="active"
+            onClick={toggle}
+          >
             About
           </SidebarLink>
-          <SidebarLink to="techStack" onClick={toggle}>
+          <SidebarLink
+            to="techStack"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            activeClass="active"
+            onClick={toggle}
+          >
             Tech Stack
           </SidebarLink>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink
+            to="projects"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            activeClass="active"
+            onClick={toggle}
+          >
             Projects
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            activeClass="active"
+            onClick={toggle}
+          >
             Contact
           </SidebarLink>
         </SidebarMenu>

@@ -36,7 +36,7 @@ export const AboutImg = styled.img`
   width: 25vw;
 
   @media screen and (max-width: 768px) {
-    height: 50vw;
+    height: 60vw;
     width: 50vw;
   }
 `;
@@ -59,12 +59,11 @@ export const AboutHeading = styled.h3`
 `;
 
 export const AboutText = styled.p`
-  color: #909090;
-  font-size: 16px;
-  line-height: 16px;
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 700;
   letter-spacing: 1.4px;
-  text-transform: uppercase;
   margin-bottom: 30px;
 `;
 
@@ -87,6 +86,16 @@ export const ResumeButton = styled.button`
     color: #010606;
     border: 3px solid #01bf71;
   }
+
+  &:active,
+  &:focus {
+    outline: none !important;
+    text-decoration: none !important;
+  }
+`;
+
+export const ResumeLink = styled.a`
+  color: inherit !important;
 `;
 
 export const DownloadIcon = styled.i`

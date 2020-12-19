@@ -52,7 +52,7 @@ export const projectThreeObj = {
   buttonLabel1: "Code",
   buttonLabel2: "Live",
   imgStart: false,
-  img: require("../../images/PortfolioPic.png").default,
+  img: require("../../videos/Portfolio.gif").default,
   alt: "project image",
   dark: true,
   primary: true,

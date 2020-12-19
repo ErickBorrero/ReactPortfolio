@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/7f625203-b049-4d42-a527-b823f96e5003/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/ErickBorrero",
+    "appService.deploySubpath": "."
+}

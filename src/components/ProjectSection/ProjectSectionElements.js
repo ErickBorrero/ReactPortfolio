@@ -12,7 +12,8 @@ export const ProjectContainer = styled.div`
 export const ProjectWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 862px;
+  margin-top: 5px;
   width: 100%;
   max-width: 1100px;
   margin-left: auto;
