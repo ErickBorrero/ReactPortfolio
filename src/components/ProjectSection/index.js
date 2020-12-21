@@ -14,6 +14,9 @@ import {
   Column2,
   ImgWrap,
   Img,
+  SkillsWrapper,
+  SkillsHeading,
+  SkillsHighlight,
 } from "./ProjectSectionElements";
 
 const ProjectSection = ({
@@ -31,6 +34,9 @@ const ProjectSection = ({
   alt,
   codeLink,
   liveLink,
+  highlight1,
+  highlight2,
+  highlight3,
 }) => {
   return (
     <>
@@ -58,6 +64,14 @@ const ProjectSection = ({
               </ImgWrap>
             </Column2>
           </ProjectRow>
+          <SkillsWrapper>
+            <SkillsHeading lightText={lightText}>
+              Skills Highlight
+            </SkillsHeading>
+            <SkillsHighlight darkText={darkText}>{highlight1}</SkillsHighlight>
+            <SkillsHighlight darkText={darkText}>{highlight2}</SkillsHighlight>
+            <SkillsHighlight darkText={darkText}>{highlight3}</SkillsHighlight>
+          </SkillsWrapper>
         </ProjectWrapper>
       </ProjectContainer>
     </>

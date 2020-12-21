@@ -126,3 +126,20 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
+
+export const SkillsWrapper = styled.ul``;
+
+export const SkillsHeading = styled.h1`
+  height: fit-content;
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1.%;
+  font-weight: 600;
+  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+`;
+
+export const SkillsHighlight = styled.li`
+  font-size: 18px;
+  line-height: 30px;
+  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+`;

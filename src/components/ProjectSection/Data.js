@@ -6,7 +6,7 @@ export const projectOneObj = {
   topLine: "Project 1",
   headLine: "Smite Api Website",
   description:
-    "Website built using Asp.net MVC model. It is a website for players of popular Hi-Rez Studios Game, Smite, to search themselves and others and see high-level statistics and info pertaining to their account.",
+    "This is a personal project of a website built using Asp.net MVC model. It is a website for players of popular Hi-Rez Studios Game, Smite, to search themselves and others and see high-level statistics and info pertaining to their account.",
   buttonLabel1: "Code",
   buttonLabel2: "Live",
   imgStart: false,
@@ -17,6 +17,9 @@ export const projectOneObj = {
   darkText: true,
   codeLink: "https://github.com/ErickBorrero/SmiteApiWebsite",
   liveLink: "https://smiteapi.azurewebsites.net/",
+  highlight1: "C# | Asp.Net MVC",
+  highlight2: "Consuming public API",
+  highlight3: "Bootstrap structuring",
 };
 
 export const projectTwoObj = {
@@ -27,7 +30,7 @@ export const projectTwoObj = {
   topLine: "Project 2",
   headLine: "Sorting Visualizer",
   description:
-    "This is a project where we get to see what happens behind the scenes whenever we need to sort and order through an array of numbers.",
+    "This is a personal project where we get to see what happens behind the scenes whenever we need to sort and order through an array of numbers.",
   buttonLabel1: "Code",
   buttonLabel2: "Live",
   imgStart: true,
@@ -38,6 +41,9 @@ export const projectTwoObj = {
   darkText: false,
   codeLink: "https://github.com/ErickBorrero/Sorting-Visualizer",
   liveLink: "https://erickborrero.github.io/Sorting-Visualizer/",
+  highlight1: "Html/Css/Javascript",
+  highlight2: "Computer and Algorithmic Logic/Understanding",
+  highlight3: "Canvas Manipulation",
 };
 
 export const projectThreeObj = {
@@ -57,8 +63,11 @@ export const projectThreeObj = {
   dark: true,
   primary: true,
   darkText: true,
-  codeLink: "",
-  liveLink: "",
+  codeLink: "https://github.com/ErickBorrero/ReactPortfolio",
+  liveLink: "https://erickborrero.azurewebsites.net",
+  highlight1: "React JS (Styled Components)",
+  highlight2: "Html/Css/Javascript",
+  highlight3: "Azure Web Hosting",
 };
 
 export const projectFourObj = {
@@ -69,16 +78,18 @@ export const projectFourObj = {
   topLine: "Project 4",
   headLine: "AutoLot Database",
   description:
-    "This is a project where we get to interact with the mechanics of a database, using SQL server, and have it displayed to consumers.",
+    "This was a class project where we get to interact with the mechanics of a database, using SQL server, and have it displayed to consumers. Currently, the site stands as it was finalized in class, but as time goes on, I will be fleshing out the site to make it presentable.",
   buttonLabel1: "Code",
   buttonLabel2: "Live",
   imgStart: true,
-  img: require("../../images/coming-soon.jpg").default,
+  img: require("../../videos/AutoLot.gif").default,
   alt: "project image",
   dark: false,
   primary: false,
   darkText: false,
-  codeLink:
-    "https://github.com/ErickBorrero/C-Sharp-Class-2020/tree/master/ch29/AutoLot",
-  liveLink: "",
+  codeLink: "https://github.com/ErickBorrero/C-Sharp-Class-2020/tree/AutoLot",
+  liveLink: "https://autolot.azurewebsites.net",
+  highlight1: "C# | Asp.Net MVC",
+  highlight2: "Entity Framework",
+  highlight3: "Sql Server",
 };

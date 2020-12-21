@@ -27,10 +27,15 @@ export const TechStackLogos = styled.div``;
 export const LogoIcon = styled.i`
   font-size: 6vw;
   border-radius: 50%;
+
   &:hover {
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
     -webkit-box-shadow: 0px 5px 40px -10px #fff;
     -moz-box-shadow: 0px 5px 40px -10px #fff;
     transition: all 0.05s ease-in-out 0.05s;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 10vw;
   }
 `;
