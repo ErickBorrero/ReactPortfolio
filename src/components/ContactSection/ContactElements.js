@@ -128,7 +128,10 @@ export const SubjectInput = styled.input`
   }
 `;
 
-export const MessageWrap = styled.div``;
+export const MessageWrap = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 export const MessageLabel = styled.label`
   font: 15px/24px "opensans-bold", sans-serif;
